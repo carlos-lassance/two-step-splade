@@ -1,3 +1,6 @@
 beir/
 build/
+anserini_indexes/
+results/
+runs/
 anserini-*.jar
