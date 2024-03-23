@@ -1,0 +1,9 @@
+[submodule "ciff"]
+	path = ciff
+	url = https://github.com/osirrc/ciff.git
+[submodule "faster-graph-bisection"]
+	path = faster-graph-bisection
+	url = https://github.com/mpetri/faster-graph-bisection.git
+[submodule "pisa-ciff"]
+	path = pisa-ciff
+	url = https://github.com/pisa-engine/ciff.git
