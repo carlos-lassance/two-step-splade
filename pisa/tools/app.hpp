@@ -77,6 +77,7 @@ namespace arg {
         explicit Index(CLI::App* app) : Encoding(app)
         {
             app->add_option("-i,--index", m_index, "Inverted index filename")->required();
+            app->add_option("--index2", m_index_2, "Inverted index 2 filename");
         }
 
         [[nodiscard]] auto index_filename() const -> std::string const& { return m_index; }
@@ -128,7 +129,7 @@ namespace arg {
         explicit Query(CLI::App* app) : Tokenizer(app)
         {
             app->add_option("-q,--queries", m_query_file, "Path to file with queries", false);
-            app->add_option("--queries2", m_query_file2, "Path to file with queries", false);
+            app->add_option("--queries2", m_query_file2, "Path to file with queries 2", false);
             m_terms_option = app->add_option("--terms", m_term_lexicon, "Term lexicon");
             app->add_option(
                    "--stopwords", m_stop_words, "List of blacklisted stop words to filter out")
