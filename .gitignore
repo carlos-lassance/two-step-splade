@@ -4,3 +4,10 @@ anserini_indexes/
 results/
 runs/
 anserini-*.jar
+ciff_output/
+latencies_pisa/
+pisa-canonical/
+pisa-index/
+results_pisa/
+runs_pisa/
+.ipynb_checkpoints/
